@@ -6,6 +6,12 @@
 
 :root {
   font-size: 62.5%;
+  --color-w: hsl(0, 0%, 100%);
+  --color-pb: hsl(195, 46%, 40%);
+  --color-gb: hsl(195, 91%, 25%);
+  --color-dp: rgba(244, 252, 255, .2);
+  --color-dg: hsl(240, 6%, 13%);
+  --color-b: hsl(240, 5%, 7%);
 }
 
 body, input {
@@ -18,12 +24,12 @@ header {
   align-items: center;
   gap: 2.6rem;
   padding: 1.2rem 2.8rem;
-  background-color: #065e7c;
+  background-color: var(--color-gb);
 }
 
 header form input {
-  background-color: #387e96;
-  color: white;
+  background-color: var(--color-pb);
+  color: var(--color-w);
   border: none;
   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
   width: 100%;
@@ -33,7 +39,7 @@ header form input {
 }
 
 header form input::placeholder {
-  color: white;
+  color: var(--color-w);
 }
 
 header .avatar {
@@ -45,7 +51,7 @@ header .avatar {
 }
 
 header .avatar:hover {
-  outline: 5px solid rgba(244, 252, 255, .2);
+  outline: 5px solid var(--color-dp);
 }
 
 .top-img img {
@@ -61,7 +67,7 @@ header .avatar:hover {
   font-size: 2.4rem;
   line-height: 3.8rem;
   margin: 3.1rem 0 .8rem;
-  color: #202024;
+  color: var(--color-dg);
 }
 
 .buttons {
@@ -80,7 +86,7 @@ header .avatar:hover {
 .main-text {
   margin: 3.1rem 2.1rem 3.4rem 0;
   font-size: 1.6rem;
-  color: #121214;
+  color: var(--color-b);
   line-height: 2.6rem;
   margin-right: 2.1rem;
 }
@@ -95,7 +101,7 @@ aside article {
 aside article h1 {
   font-size: 2.4rem;
   line-height: 1.7rem;
-  color: #202024;
+  color: var(--color-dg);
 }
 
 .news {
@@ -111,33 +117,33 @@ aside article h1 {
 
 .details h4 {
   font-size: 1.8rem;
-  color: #202024;
+  color: var(--color-dg);
 }
 
 .details p {
   margin-top: .3rem;
-  color: #121214;
+  color: var(--color-b);
   font-size: 1.4rem;
 }
 
 footer {
   margin-top: 3.9rem;
   text-align: center;
-  background-color: #387e96;
+  background-color: var(--color-pb);
   padding: 2.65rem 1.6rem;
 }
 
 footer p {
   font-weight: 600;
   font-size: 1.6rem;
-  color: white;
+  color: var(--color-w);
 }
 
 
 @media (width > 770px) {
 
   body {
-    background-color: #F4FCFF;
+    background-color: hsl(196, 100%, 98%);
     overflow-x: hidden;
   }
 
