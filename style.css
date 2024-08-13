@@ -81,6 +81,11 @@ header .avatar:hover {
   border: none;
   cursor: pointer;
   overflow: hidden;
+  transition: 100ms linear;
+}
+
+button:hover {
+  outline: 5px solid rgba(6, 94, 124, .4);
 }
 
 .main-text {
@@ -191,7 +196,7 @@ footer p {
     margin: 0 auto;
   }
 
-  aside article {
+  .right article {
     margin: 0;
     max-width: 39.5rem;
   }
