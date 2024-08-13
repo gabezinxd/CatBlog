@@ -138,6 +138,7 @@ footer p {
 
   body {
     background-color: #F4FCFF;
+    overflow-x: hidden;
   }
 
   header {
