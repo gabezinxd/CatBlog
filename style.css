@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body, input {
+  font-family: Mulish;
+}
+
+header {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  gap: 2.6rem;
+  padding: 1.2rem 2.8rem;
+  background-color: #065e7c;
+}
+
+header form input {
+  background-color: #387e96;
+  color: white;
+  border: none;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  width: 100%;
+  border-radius: .4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+header form input::placeholder {
+  color: white;
+}
+
+header .avatar {
+  width: 4.0rem;
+  height: 4.0rem;
+  border-radius: 50%;
+}
+
+.top-img img {
+  width: 100%;
+}
+
+#app {
+  padding-left: 2.2rem;
+}
+
+#app h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  margin: 3.1rem 0 .8rem;
+  color: #202024;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.buttons button {
+  border-radius: 50%;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.main-text {
+  margin: 3.1rem 2.1rem 3.4rem 0;
+  font-size: 1.6rem;
+  color: #121214;
+  line-height: 2.6rem;
+  margin-right: 2.1rem;
+}
+
+aside article {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-left: 2.2rem;
+}
+
+aside article h1 {
+  font-size: 2.4rem;
+  line-height: 1.7rem;
+  color: #202024;
+}
+
+.news {
+  display: flex;
+  gap: 1.6rem;
+  padding-right: 1.1rem;
+}
+
+.news img {
+  border-radius: .6rem;
+  object-fit: cover;
+}
+
+.details h4 {
+  font-size: 1.8rem;
+  color: #202024;
+}
+
+.details p {
+  margin-top: .3rem;
+  color: #121214;
+  font-size: 1.4rem;
+}
+
+footer {
+  margin-top: 3.9rem;
+  text-align: center;
+  background-color: #387e96;
+  padding: 2.65rem 1.6rem;
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+}
+
+
+@media (width > 770px) {
+
+  body {
+    background-color: #F4FCFF;
+  }
+
+  header {
+    padding: 1.2rem 11.2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 3.5rem;
+    margin-top: 4.4rem;
+  }
+  
+  .top-img img {
+    content: url(./assets/01-desktop.jpg);
+    padding-left: 10.9rem;
+  }
+
+  #app {
+    padding: 0;
+    margin-left: 11.2rem;
+  }
+
+  #app h1 {
+    margin: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    margin-top: 3.1rem;
+  }
+
+  .right {
+    margin: 0 auto;
+  }
+
+  aside article {
+    margin: 0;
+    max-width: 39.5rem;
+  }
+
+}
