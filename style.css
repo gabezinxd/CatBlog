@@ -123,6 +123,7 @@ aside article h1 {
 }
 
 .news img {
+  height: 100%;
   border-radius: .6rem;
   object-fit: cover;
   cursor: pointer;
