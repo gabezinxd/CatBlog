@@ -40,6 +40,12 @@ header .avatar {
   width: 4.0rem;
   height: 4.0rem;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 150ms ease-out;
+}
+
+header .avatar:hover {
+  outline: 5px solid rgba(244, 252, 255, .2);
 }
 
 .top-img img {
@@ -137,6 +143,10 @@ footer p {
   header {
     padding: 1.2rem 11.2rem;
   }
+  
+  header > * {
+    animation: move .4s;
+  } 
 
   main {
     display: grid;
@@ -166,6 +176,10 @@ footer p {
     margin-top: 3.1rem;
   }
 
+  .left {
+    animation: flash .4s;
+  }
+
   .right {
     margin: 0 auto;
   }
@@ -174,5 +188,38 @@ footer p {
     margin: 0;
     max-width: 39.5rem;
   }
+  
+  .news, .right h1 {
+    --delay: .3s;
+    animation: appear .4s var(--delay) backwards;
+  }
 
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+    transform: translateX(100%);
+
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
