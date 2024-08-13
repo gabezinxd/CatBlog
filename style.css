@@ -113,16 +113,25 @@ aside article h1 {
   display: flex;
   gap: 1.6rem;
   padding-right: 1.1rem;
+  transition: background-color 150ms ease-in;
+}
+
+.news:hover {
+  background-color: rgba(6, 94, 124, .4);
+  border-radius: .6rem;
+  outline: 6px solid rgba(6, 94, 124, .4);
 }
 
 .news img {
   border-radius: .6rem;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .details h4 {
   font-size: 1.8rem;
   color: var(--color-dg);
+  cursor: pointer;
 }
 
 .details p {
