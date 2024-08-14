@@ -15,7 +15,7 @@
 }
 
 body, input {
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
 }
 
 header {
@@ -93,7 +93,6 @@ button:hover {
   font-size: 1.6rem;
   color: var(--color-b);
   line-height: 2.6rem;
-  margin-right: 2.1rem;
 }
 
 aside article {
@@ -236,8 +235,7 @@ footer p {
 @keyframes appear {
   0% {
     opacity: 0;
-    transform: scale(0.7);
-    transform: translateX(100%);
+    transform: scale(0.7) translateX(100%);
 
   }
 
